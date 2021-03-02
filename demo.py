@@ -39,7 +39,7 @@ parser.add_argument('--image_dir', type=str, default='./result/demo/img/',
                     help='Directory for detect result')
 parser.add_argument('--save_dir', type=str, default='./result/demo/img_det/',
                     help='Directory for detect result')
-parser.add_argument('--weight', type=str, help='weight file', required=True)
+parser.add_argument('--weight', type=str, default='./weights/best_weight.pth', help='weight file')
 parser.add_argument('--thresh', default=0.5, type=float,
                     help='Final confidence threshold')
 args = parser.parse_args()

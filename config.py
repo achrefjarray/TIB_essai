@@ -63,7 +63,7 @@ _C.USE_NMS = True
 
 # vocdataset config
 _C.VOC = EasyDict()
-_C.VOC.HOME = './dataset'
+_C.VOC.HOME = './data/dataset'
 _C.VOC.TRAIN_FILE = _C.VOC.HOME + 'uav_train.txt'
 _C.VOC.VAL_FILE = _C.VOC.HOME + 'uav_val.txt'
 _C.VOC.TEST_FILE = _C.VOC.HOME + 'uav_test.txt'
