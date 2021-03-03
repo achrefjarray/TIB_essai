@@ -39,7 +39,7 @@ _C.filter_min_face = True
 # train config
 _C.MAX_STEPS = 300000
 _C.LR_STEPS = (240000, 360000)
-_C.EPOCHES = 500
+_C.EPOCHES = 100
 
 # anchor config
 _C.FEATURE_MAPS = [160, 80, 40, 20, 10, 5]
@@ -64,9 +64,9 @@ _C.USE_NMS = True
 # vocdataset config
 _C.VOC = EasyDict()
 _C.VOC.HOME = './data/dataset'
-_C.VOC.TRAIN_FILE = _C.VOC.HOME + 'uav_train.txt'
-_C.VOC.VAL_FILE = _C.VOC.HOME + 'uav_val.txt'
-_C.VOC.TEST_FILE = _C.VOC.HOME + 'uav_test.txt'
+_C.VOC.TRAIN_FILE = _C.VOC.HOME + '/train.txt'
+_C.VOC.VAL_FILE = _C.VOC.HOME + '/val.txt'
+_C.VOC.TEST_FILE = _C.VOC.HOME + '/test.txt'
 _C.VOC.OVERLAP_THRESH = [0.1, 0.35, 0.5]
 
 # other dataset config
